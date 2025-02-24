@@ -1,0 +1,11 @@
+<div class="container">
+<h1>POKEDEX</h1>
+
+<% @pokemons.each do |pokemon|%>
+<%= cl_image_tag pokemon.photo.key %>
+<%= pokemon.name %>
+<% end %>
+
+
+
+</div>
